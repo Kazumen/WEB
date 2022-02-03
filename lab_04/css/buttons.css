@@ -1,0 +1,29 @@
+div.buttons{
+    text-align: center;
+    margin: 20px;
+}
+button.edit{
+    border-radius: 10px;
+    height: 25px;
+    width: 80px;
+    border-color:cornflowerblue;
+    color: cornflowerblue;
+
+}
+button.delete{
+    border-radius: 10px;
+    height: 25px;
+    width: 80px;
+    border-color:red;
+    color: red;
+    margin-left: 20px;
+}
+button.delete:hover{
+    background: palevioletred;
+    border-color: palevioletred;
+    color: black;
+}
+button.edit:hover{
+background: cornflowerblue;
+    color: blue;
+}
