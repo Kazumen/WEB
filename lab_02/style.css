@@ -1,4 +1,4 @@
-table td, table th {
+.table td, .table th {
     border: 1px solid #6395ff;
     padding: 5px 10px;
 }
