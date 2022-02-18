@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Component</title>
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <style>
+        .menu {
+
+            top: 0%;
+            padding: 10px;
+            background: #ffe;
+            border: 1px solid #333;
+            position: fixed; left: 50%;
+            border-radius: 15px;
+            transform: translate(-50%);
+
+        }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <i>My Network Switch's</i>
+    <button id="myBtn">Открыть модальный</button>
+    <input type="text" placeholder="Search your switch...">
+        <button class="search">Search</button>
+        <button class="cancel">Cancel</button>
+</div>
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <div class="modal-header">
+
+            <div class="modal-head">Network switch options</div>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+           <ul class="modalInputList">
+               <li>
+                   <label for="inputSwitchName">Network switch's name:<br>
+                       <input id="inputSwitchName" class="modalInputProperty" placeholder="Input network switch's name...">
+                   </label>
+               </li>
+               <li>
+                   <label for="inputSwitchType">Network switch's type:<br>
+                       <input id="inputSwitchType" class="modalInputProperty"
+                              placeholder="Input network switch's type...">
+                   </label>
+               </li>
+               <li>
+                   <label for="inputGigabitPorts">Count of Gigabit Ethernet ports:<br>
+                       <select id="inputGigabitPorts" class="modalInputProperty">
+                           <option>8</option>
+                           <option>16</option>
+                           <option>24</option>
+                           <option>48</option>
+                       </select>
+                   </label>
+               </li>
+               <li>
+                   <label for="inputSFPPorts">Count of SFP ports:<br>
+                       <select id="inputSFPPorts" class="modalInputProperty">
+                           <option>0</option>
+                           <option>4</option>
+                           <option>8</option>
+                           <option>10c</option>
+                       </select>
+                   </label>
+               </li>
+               <li>
+                   <label for="inputInstallation">Possibility of installation in a rack:<br>
+                       <select id="inputInstallation" class="modalInputProperty">
+                           <option>Yes</option>
+                           <option>No</option>
+                       </select>
+                   </label>
+               </li>
+               <li>
+                   <img id="modalSwitchImage" alt="" src=""><br>
+                   <label for="inputSwitchImage">Select image file:<br>
+                       <input type="file" id="inputSwitchImage" class="modalInputProperty"
+                              onchange=showImage(this)>
+                   </label>
+               </li>
+           </ul>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    var modal = document.getElementById("myModal");
+
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    function showImage(imageElement) {
+        let image = document.getElementById("modalSwitchImage");
+        image.src = URL.createObjectURL(imageElement.files[0]);
+    }
+
+</script>
+
+</body>
+</html>
