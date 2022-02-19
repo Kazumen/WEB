@@ -22,6 +22,21 @@
 
 
 }
+.modal-button{
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+    border-color:cornflowerblue;
+    color: cornflowerblue;
+}
+.modal-button:hover{
+    background: cornflowerblue;
+    color: blue;
+}
+
 
 .close {
     color: black;
