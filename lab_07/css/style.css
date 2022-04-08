@@ -1,0 +1,36 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	text-align: center;
+	font-size: 40px;
+}
+
+.header-box, .footer-box, .elements-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+header, footer, .content-box, main {
+	flex-grow: 1;
+}
+
+aside {
+	width: 15%;
+	min-width: 150px;
+}
+
+header, figure, menu, nav, article, .search, .ad-unit, footer {
+	background-color: dodgerblue;
+	margin: 20px 10px;
+	padding: 10px;
+}
+
+header {
+	margin-bottom: 0;
+}
