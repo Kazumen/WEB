@@ -1,0 +1,59 @@
+.navbar li:hover ul {
+    display: block;
+    background-color: Orange;
+
+}
+
+.navbar * {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;}
+
+.navbar li {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    transition: background 0.2s;
+
+}
+
+.navbar {
+    font-family: Verdana;
+    background: CornflowerBlue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.navbar li:hover {
+    background-color: Orange; }
+
+.navbar ul li:hover {
+    background-color: CornflowerBlue; }
+
+.navbar li a{
+    display: table-cell;
+    min-width: 200px;
+    text-align: center;
+    color: White;
+    text-decoration: none; }
+.navbar li ul{
+    height: 0;
+    opacity: 0;
+    background-color: orange;
+    visibility: hidden;
+    transition: height 0.5s,opacity 0.5s,visibility 0s;
+}
+.navbar li:hover ul {
+    visibility: visible;
+    display: block;
+    height: 300%;
+    opacity: 1;
+    background-color: Orange;
+}
+
+
+
+
