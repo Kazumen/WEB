@@ -1,0 +1,58 @@
+$mainColor:white;
+.orange{
+  background-color: orange;
+}
+@mixin h($height:40px){
+  height: $height;
+}
+
+body{
+  background: $mainColor;
+}
+.navbar{
+  font-family: Verdana;
+  background: cornflowerblue;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  * {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    li:hover{
+      background-color: CornflowerBlue; }
+  }
+  li{
+    display: block;
+    @include h(40px);
+    line-height: 40px;
+    position: relative;
+    transition: background 0.2s;
+    &:hover{
+      @extend .orange;
+    }
+    &:hover ul{
+      visibility: visible;
+      display: block;
+      height: 300%;
+      opacity: 1;
+      @extend .orange
+    }
+    a{
+      display: table-cell;
+      min-width: 200px;
+      text-align: center;
+      color:$mainColor;
+      text-decoration: none;
+    }
+    ul{
+      height: 0;
+      opacity: 0;
+      @extend .orange;
+      visibility: hidden;
+      transition: height 0.5s,opacity 0.5s,visibility 0s;
+      }
+    }
+  }

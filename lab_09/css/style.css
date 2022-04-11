@@ -1,0 +1,51 @@
+.orange, .navbar li ul, .navbar li:hover ul, .navbar li:hover {
+  background-color: orange;
+}
+
+body {
+  background: white;
+}
+
+.navbar {
+  font-family: Verdana;
+  background: cornflowerblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navbar * {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li:hover {
+  background-color: CornflowerBlue;
+}
+.navbar li {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  transition: background 0.2s;
+}
+.navbar li:hover ul {
+  visibility: visible;
+  display: block;
+  height: 300%;
+  opacity: 1;
+}
+.navbar li a {
+  display: table-cell;
+  min-width: 200px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.navbar li ul {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: height 0.5s, opacity 0.5s, visibility 0s;
+}
+
+/*# sourceMappingURL=style.css.map */
