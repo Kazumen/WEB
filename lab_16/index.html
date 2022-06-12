@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<h1>Завдання 1</h1>
+<div id="test">First</div>
+<button onclick="setContent()">Змінити текст 1им способом</button>
+<button onclick="setContent2()">Змінити текст 2им способом</button>
+<br>
+
+<h1>Завдання 2</h1>
+<img class="image" src="img/dog.jpg" id="animal" alt="Dog">
+<br>
+<button onclick="changeCatAndDog()">Змінити тварину</button>
+<button onclick="showCatAndDogImageModal()">Показати модальне вікно з зображенням</button>
+<div id="modalWindow" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCatAndDogImageModal()">&times;</span>
+        <img class="modalImage" style="height: 400px" src="" alt="">
+    </div>
+</div>
+
+
+<h1>Завдання 3</h1>
+<h2>Article header</h2>
+<div id="text">
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+</div>
+<p>Another text</p>
+<button onclick="printText()">Вивест вміст параграфів в консоль</button>
+
+<h1>Завдання 4</h1>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<button onclick="displayModalWithOrderedList()">Відкрити модалку 1им способом</button>
+<button onclick="displayModalWithOrderedList2()">Відкрити модалку 2им способом</button>
+<div id="modalWindow2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeOrderedListModal()">&times;</span>
+        <p id="orderedList"></p>
+    </div>
+</div>
+
+<h1>Завдання 5</h1>
+<div id="exercise5">
+    <h1>I'am a big header!!!</h1>
+    <div id="myDiv">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+        <p>Fourth paragraph</p>
+    </div>
+    <ul id="myList">
+        <li>Make</li>
+        <li>me</li>
+        <li>horizontal!</li>
+    </ul>
+    <span>Make me invisible, please!</span>
+</div>
+<br>
+<button onclick="Exercise5()">Виконати всі дії з завдання 5</button>
+
+<h1>Завдання 6</h1>
+<input type="text" id="input1" value="">
+<input type="text" id="input2" value="">
+<br>
+<button onclick="enterMessages()">Ввести 2 повідомлення</button>
+<button onclick="swapMessages()">Поміняти повідомлення місцями</button>
+
+<h1>Завдання 7</h1>
+<div id = "exercise7"></div>
+<button onclick="createContent()">Додати елементів</button>
+<script src="script.js"></script>
+</body>
+</html>

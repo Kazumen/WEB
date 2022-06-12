@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Document</title>
+</head>
+<body>
+
+<h1>Завдання 1</h1>
+<button onclick="createWindow()">Сворити</button>
+
+<h1>Завдання 2</h1>
+<p id ='text'>I learning JavaScript events!</p>
+<button onclick="changeCSS()">Змінити</button>
+
+<h1>Завдання 3</h1>
+<button onclick="changeColor('blue')">Натиск для синього</button>
+<button ondblclick="changeColor('pink')">Подвійний натиск для розового</button>
+<button onmousedown="changeColor('brown')" onmouseup="changeColor('white')">Нажати і тримати для коричнивого</button>
+<a href="" onmouseover="changeColor('yellow')" onmouseleave="changeColor('white')">Навести для жовтого</a>
+
+<h1>Завдання 4</h1>
+<div style="display: inline">
+  <select id="select">
+    <option value="1">Peter</option>
+    <option value="2">John</option>
+    <option value="3">Alice</option>
+    <option value="4">Alex</option>
+    <option value="5">Iren</option>
+  </select>
+  <button onclick="deleti()">Видалити</button>
+</div>
+
+<h1>Завдання 5</h1>
+<button onclick="buttonClick()" onmouseover="buttonOver()" onmouseOut="buttonMouseOut()">Live button!</button>
+<div id="liveButton"></div>
+
+<h1>Завдання 6</h1>
+<p id="width" style="display: inline;"></p>
+<p id="height" style="display: inline;"></p>
+
+<h1>Завдання 7</h1>
+<select name="country" id="country" onchange="addCities()">
+  <option value="Germany">Germany</option>
+  <option value="USA">USA</option>
+  <option value="Ukraine">Ukraine</option>
+</select>
+
+<select name="cities" id="cities" onchange="cityCountry()"></select>
+<p id="countryCity"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
